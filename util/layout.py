@@ -1,6 +1,5 @@
 import streamlit as st
 from st_pages import get_nav_from_toml
-import  turtle
 
 # Definição de layout geral para o aplicativo
 def layout():
@@ -18,8 +17,8 @@ def layout():
 
 
         with col:
-            st.image('assets/img/logo-fiap.png', width=150)
-            st.image('assets/img/logo-postech.png', width=200)
+            st.image('assets/img/logo-fiap.png', width=150, use_column_width=True)
+            st.image('assets/img/logo-postech.png', width=200, use_column_width=True)
 
         st.divider()
 
