@@ -40,7 +40,7 @@ def layout():
         st.text('')
 
         st.text(
-            'Mauricio Alexandre de Souza Júnior teste'
+            'Mauricio Alexandre de Souza Júnior'
         )
         st.text('')
 
