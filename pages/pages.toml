@@ -4,7 +4,9 @@ name = "Datathon - Fase 5"
 icon = "🖥️"
 
 [[pages]]
-path = "./pages/2_passos_magicos"
+path = "./pages/2_passos_magicos.py"
+name = "Passos Mágicos"
+icon = "🖥️"
 
 [[pages]]
 path = "./pages/3_eda.py"
