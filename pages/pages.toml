@@ -1,20 +1,23 @@
 [[pages]]
 path = "./pages/1_introducao.py"
-name = "Tech Challenge - Fase 4"
+name = "Datathon - Fase 5"
 icon = "🖥️"
 
 [[pages]]
-path = "./pages/2_eda.py"
+path = "./pages/2_passos_magicos"
+
+[[pages]]
+path = "./pages/3_eda.py"
 name = "Exploração e Insights"
 icon = "📈"
 
 [[pages]]
-path = "./pages/3_previsao.py"
-name = "Previsão"
+path = "./pages/4_modelos.py"
+name = "Modelos"
 icon = "⚙️"
 
 [[pages]]
-path = "./pages/4_conclusao.py"
+path = "./pages/5_conclusao.py"
 name = "Conclusão"
 icon = "🎯"
 

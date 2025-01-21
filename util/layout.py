@@ -19,6 +19,26 @@ def layout():
         )
         st.text('RM 354421')
 
+        st.text(
+            'Gabriel Krieguer Zarichen'
+        )
+        st.text('')
+
+        st.text(
+            'Georgia Oliveira Paixão Duarte'
+        )
+        st.text('')
+
+        st.text(
+            'Mauricio Alexandre de Souza Júnior'
+        )
+        st.text('')
+
+        st.text(
+            'Renan da Silva Leão'
+        )
+        st.text('')
+
         st.divider()
 
         st.subheader('Guia para instalação e execução do aplicativo localmente') 
