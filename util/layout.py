@@ -17,9 +17,9 @@ def layout():
             'Vinicius Mathias Lacrimanti Pignataro',
             help='LinkedIn: https://www.linkedin.com/in/vinicius-pignataro/'
         )
-        st.txt('RM 354421')
+        st.text('RM 354421')
 
-        
+        st.divider()
 
         st.subheader('Guia para instalação e execução do aplicativo localmente') 
 
