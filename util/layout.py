@@ -12,6 +12,11 @@ def layout():
 
     # Instruções adicionais no sidebar
     with st.sidebar:
+        
+        st.image('.\\assets\\img\\logo-fiap.png')
+        st.image('.\\assets\\img\\logo-postech.png')
+
+        st.divider()
 
         st.text(
             'Vinicius Mathias Lacrimanti Pignataro',

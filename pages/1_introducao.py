@@ -12,8 +12,6 @@ def main():
     st.subheader(':gray[Objetivos]', divider='red')
 
     st.markdown('''
-                * MELHORAR E INTRODUZIR TEXTO SOBRE OBJETIVO * 
-
                 O objetivo desse trabalho é desenvolver uma proposta analítica ou preditiva para avaliar o impacto da ONG **:red[Passos Mágicos]** sobre as comunidades atendidas. Com base em dados educacionais de 2020 a 2022, a proposta analítica busca criar um dashboard para analisar o desempenho dos estudantes, oferecendo insights que auxiliem na tomada de decisões pela ONG. Já a proposta preditiva tem como objetivo construir um modelo para prever o comportamento dos estudantes com base em variáveis relevantes, utilizando técnicas como machine learning e deep learning. \n
                 ''')
                 
@@ -21,7 +19,7 @@ def main():
 
     st.markdown('''
                 A metodologia do projeto é definida em 3 etapas, focando em suas respectivas áreas, como a análise de dados e treinamento de modelos de aprendizado: \n
-                :one: **:red[Análise Exploratória dos Dados (EDA):] Primeira etapa, onde serão coletados dados, além dos fornecidos pela ONG **:red[Passos Mágicos]**], realizando uma análise exploratória para identificação de padrões e detectar outliers eanomalias. \n
+                :one: **:red[Análise Exploratória dos Dados (EDA):] Primeira etapa, onde serão coletados dados, além dos fornecidos pela ONG **:red[Passos Mágicos]**, realizando uma análise exploratória para identificação de padrões e detectar outliers eanomalias. \n
                 :two: **:red[Modelos de Machine Learning:] Segunda etapa, onde serão desenvolvidos modelos de Machine Learning afim de classificar e prever pontos-chave que influenciam o ponto de virada dos alunos. \n
                 :three: **:red[Conclusão:] Última etapa, onde será realizado um remate de todo o trabalho desenvolvido, identificando os próximos passos em relação às propostas. \n
                 ''')
