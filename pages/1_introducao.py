@@ -19,9 +19,9 @@ def main():
 
     st.markdown('''
                 A metodologia do projeto é definida em 3 etapas, focando em suas respectivas áreas, como a análise de dados e treinamento de modelos de aprendizado: \n
-                :one: **:red[Análise Exploratória dos Dados (EDA):] Primeira etapa, onde serão coletados dados, além dos fornecidos pela ONG **:red[Passos Mágicos]**, realizando uma análise exploratória para identificação de padrões e detectar outliers eanomalias. \n
-                :two: **:red[Modelos de Machine Learning:] Segunda etapa, onde serão desenvolvidos modelos de Machine Learning afim de classificar e prever pontos-chave que influenciam o ponto de virada dos alunos. \n
-                :three: **:red[Conclusão:] Última etapa, onde será realizado um remate de todo o trabalho desenvolvido, identificando os próximos passos em relação às propostas. \n
+                :one: **:red[Análise Exploratória dos Dados (EDA):]** Primeira etapa, onde serão coletados dados, além dos fornecidos pela ONG **:red[Passos Mágicos]**, realizando uma análise exploratória para identificação de padrões e detectar outliers eanomalias. \n
+                :two: **:red[Modelos de Machine Learning:]** Segunda etapa, onde serão desenvolvidos modelos de Machine Learning afim de classificar e prever pontos-chave que influenciam o ponto de virada dos alunos. \n
+                :three: **:red[Conclusão:]** Última etapa, onde será realizado um remate de todo o trabalho desenvolvido, identificando os próximos passos em relação às propostas. \n
                 ''')
     
 main()  
