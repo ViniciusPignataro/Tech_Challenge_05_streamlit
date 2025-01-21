@@ -1,6 +1,5 @@
 import streamlit as st
 from st_pages import get_nav_from_toml
-import _tkinter
 import  turtle
 
 # Definição de layout geral para o aplicativo
