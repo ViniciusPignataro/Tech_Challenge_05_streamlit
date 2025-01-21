@@ -12,6 +12,15 @@ def layout():
 
     # Instruções adicionais no sidebar
     with st.sidebar:
+
+        st.text(
+            'Vinicius Mathias Lacrimanti Pignataro',
+            help='LinkedIn: https://www.linkedin.com/in/vinicius-pignataro/'
+        )
+        st.txt('RM 354421')
+
+        
+
         st.subheader('Guia para instalação e execução do aplicativo localmente') 
 
         st.markdown('**1º** Crie e ative um ambiente virtual:')
