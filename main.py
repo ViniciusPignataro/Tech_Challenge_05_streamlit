@@ -5,7 +5,7 @@ import pandas as pd
 # Define a configuração do app
 
 st.set_page_config(
-        page_title='Tech Challenge 04', layout='wide',
+        page_title='Datathon', layout='wide',
         page_icon='📈'
     )
 
