@@ -24,20 +24,22 @@ def layout():
         st.divider()
 
         st.text(
-            'Vinicius Mathias Lacrimanti Pignataro',
+            'Vinicius Mathias Lacrimanti Pignataro \n RM 354421',
             help='LinkedIn: https://www.linkedin.com/in/vinicius-pignataro/'
         )
-        st.text('RM 354421')
+        # st.text('RM 354421')
 
         st.text(
-            'Gabriel Krieguer Zarichen'
+            'Gabriel Krieguer Zarichen',
+            help='LinkedIn: https://www.linkedin.com/in/gabriel-zarichen/'
         )
-        st.text('')
+        st.text('RM 354774')
 
         st.text(
-            'Georgia Oliveira Paixão Duarte'
+            'Georgia Oliveira Paixão Duarte',
+            help='LinkedIn: https://www.linkedin.com/in/georgia-oliveira-paix%C3%A3o-duarte-61133729/'
         )
-        st.text('')
+        st.text('RM 354529')
 
         st.text(
             'Mauricio Alexandre de Souza Júnior'

@@ -12,13 +12,13 @@ def show():
         st.subheader(':red[Missão]', divider='red')
         st.markdown('''
                     Sua missão, de acordo com o site da ONG, é: <br/>
-                    <quote>:orange["[...] transformar a vida de jovens e crianças, oferecendo ferramentas para levá-los a melhores oportunidades de vida."] </quote>
+                    :orange["[...] transformar a vida de jovens e crianças, oferecendo ferramentas para levá-los a melhores oportunidades de vida."]
                     ''', unsafe_allow_html=True)
         
         st.subheader(':red[Visão]', divider='red')
         st.markdown('''
                     Sua visão, de acordo com o site da ONG, é: <br/>
-                    <quote>:orange["[...] viver em um Brasil no qual todas as crianças e jovens têm iguais oportunidades para realizarem seus sonhos e são agentes transformadores de suas próprias vidas. </quote>]
+                    :orange["[...] viver em um Brasil no qual todas as crianças e jovens têm iguais oportunidades para realizarem seus sonhos e são agentes transformadores de suas próprias vidas.]
                     ''', unsafe_allow_html=True)
         
     with col1:
