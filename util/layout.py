@@ -13,8 +13,9 @@ def layout():
     # Instruções adicionais no sidebar
     with st.sidebar:
 
-        _, col, _ = st.columns([1, 8, 1])
+        st.markdown('#')
 
+        _, col, _ = st.columns([1, 8, 1])
 
         with col:
             st.image('assets/img/logo-fiap.png', width=150, use_container_width=True)
