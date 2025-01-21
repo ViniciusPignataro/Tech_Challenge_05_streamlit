@@ -1,3 +1,4 @@
+from turtle import width
 import streamlit as st
 from st_pages import get_nav_from_toml
 
@@ -13,8 +14,12 @@ def layout():
     # Instruções adicionais no sidebar
     with st.sidebar:
 
-        st.image('assets/img/logo-fiap.png')
-        st.image('assets/img/logo-postech.png')
+        _, col, _ = st.columns([1, 8, 1])
+
+
+        with col:
+            st.image('assets/img/logo-fiap.png', width=150, use_column_width=True)
+            st.image('assets/img/logo-postech.png', width=200, use_column_width=True)
 
         st.divider()
 
