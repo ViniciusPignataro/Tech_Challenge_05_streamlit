@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.markdown('teste')
+def show():
+    st.markdown('teste')
