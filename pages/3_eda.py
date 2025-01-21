@@ -1,4 +1,5 @@
 import streamlit as st
+from tabs.eda import analise_tab, insights_tab
 
 
 def main():
@@ -7,25 +8,9 @@ def main():
     tab1, tab2 = st.tabs(['Análise (mudar nome)', 'Power BI'])
 
     with tab1:
-        st.subheader(':gray[Subtítulo sobre a parte da Análise]', divider='red')
-
-        st.markdown('''
-                    * SOBRE A ANÁLISE(COM GRAFICOS) * \n
-                    ''')
-    
+       analise_tab.show()
 
     with tab2:
-        st.subheader(':gray[Eventos e Insights Analisados com Power BI]', divider='red')
+        insights_tab.show()
 
-        st.markdown('''
-                    * SOBRE INSIGHTS DENTRO DO CONTEXTO * \n
-                    ''')
-        
-
-        st.subheader(':red[Insights]')
-
-        st.markdown('''
-                    :one: * SOBRE INSIGHTS EM SI (COM PRINTS) * \n
-                    ''')
-        
 main()  

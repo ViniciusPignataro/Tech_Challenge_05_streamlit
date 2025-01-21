@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs.passos_magicos import sobre_tab
+from tabs.passos_magicos import sobre_tab, relatorios_tab, base_dados_tab
 
 def main():
     # Definindo um título para a página    
@@ -11,19 +11,11 @@ def main():
 
     with tab1:
         sobre_tab.show()
-    # with tab1:
-    #     st.markdown('''
-    #                 * INTRODUZIR TEXTO SOBRE A PASSOS MÁGICOS, SEPARANDO MAIS SUBHEADERS PARA MISSAO, VISÃO E VALORES * \n
-    # 	            ''')
 
     with tab2:
-        st.markdown('''
-                    * INSERIR SOBRE PEDE E RELATÓRIOS *
-                    ''')
+        relatorios_tab.show()
 
     with tab3:
-        st.markdown('''
-                    * INSERIR SOBRE BASE DE DADOS *
-                    ''')
+        base_dados_tab.show()
 
 main()  

@@ -45,9 +45,10 @@ def layout():
         st.text('')
 
         st.text(
-            'Renan da Silva Leão'
+            'Renan da Silva Leão',
+            help='LinkedIn: https://www.linkedin.com/in/renanleao7/'
         )
-        st.text('')
+        st.text('RM 355101')
 
         st.divider()
 
