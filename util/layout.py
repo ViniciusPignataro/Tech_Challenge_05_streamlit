@@ -17,8 +17,8 @@ def layout():
 
 
         with col:
-            st.image('assets/img/logo-fiap.png', width=150, use_column_width=True)
-            st.image('assets/img/logo-postech.png', width=200, use_column_width=True)
+            st.image('assets/img/logo-fiap.png', width=150, use_container_width=True)
+            st.image('assets/img/logo-postech.png', width=200, use_container_width=True)
 
         st.divider()
 
