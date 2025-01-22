@@ -12,7 +12,7 @@ def main():
         st.image('assets/img/logo-passos-magicos.png', use_container_width=True)
 
     # Criação de abas
-    tab1, tab2, tab3 = st.tabs(['Sobre', 'Relatórios'])
+    tab1, tab2 = st.tabs(['Sobre', 'Relatórios'])
 
 
     with tab1:
