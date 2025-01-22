@@ -3,8 +3,14 @@ from tabs.passos_magicos import sobre_tab, relatorios_tab, base_dados_tab
 
 def main():
     # Definindo um título para a página    
-    st.title('FIAP PÓS TECH - DATA ANALYTICS')
-    
+    col1, col2 = st.columns([2, 1])
+
+    with col1: 
+        st.title('FIAP PÓS TECH - DATA ANALYTICS')
+
+    with col2:
+        st.image('assets/img/logo-passos-magicos.png', use_container_width=True)
+
     # Criação de abas
     tab1, tab2, tab3 = st.tabs(['Sobre', 'Relatórios', 'Base de dados'])
 

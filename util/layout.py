@@ -48,6 +48,10 @@ def layout():
             help='LinkedIn: https://www.linkedin.com/in/renanleao7/'
         )
 
+        st.text(
+            'Turma: 4DTAT'
+        )
+
         st.divider()
 
         st.subheader('Guia para instalação e execução do aplicativo localmente') 

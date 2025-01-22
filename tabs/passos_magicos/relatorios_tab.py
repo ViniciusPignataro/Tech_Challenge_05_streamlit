@@ -6,11 +6,11 @@ def show():
                 
                 A ONG **:red[Passos Mágicos]** utiliza uma métrica chamada **:red[INDE (Índice Nacional de Desenvolvimento Educacional)]**, utilizado para avaliar os alunos baseando-se em indicadores relacionados a aspectos psicossociais, acadêmicos e psicopedagógicos, utilizado para definir o Indicador do Ponto de Virada. \n
 
-                Os indicadores se dividem em **:red[3]** dimensões principais:
+                Os indicadores se dividem em **:red[3]** dimensões principais: \n
                 :one: **:red[Dimensão acadêmica:]** abrangendo os indicadores **:red[IAN]**, **:red[IDA]** e **:red[IEG]** \n
                 :two: **:red[Dimensão psicossocial:]** abrangendo os indicadores **:red[IAA]** e **:red[IPS]** \n
                 :three: **:red[Dimensão psicopedagógica:]** abrangendo os indicadores **:red[IPP]** e **:red[IPV]**
-
+                \n \n
                 Esse conjunto de indicadores, dos quais avaliam diversos aspectos do desenvolvimento educacional do aluno, são pontuados de forma a calcular o **:red[INDE]**. Os indicadores mencionados estão definidos abaixo para melhor entendimento:
 
                 * **:red[Indicador de Adequação de Nível (IAN):]** Analisa se o aluno está num nível adequado de ensino para sua idade;
