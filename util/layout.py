@@ -27,30 +27,26 @@ def layout():
             'Vinicius Mathias Lacrimanti Pignataro \n RM 354421',
             help='LinkedIn: https://www.linkedin.com/in/vinicius-pignataro/'
         )
-        # st.text('RM 354421')
 
         st.text(
-            'Gabriel Krieguer Zarichen',
+            'Gabriel Krieguer Zarichen \n RM 354774',
             help='LinkedIn: https://www.linkedin.com/in/gabriel-zarichen/'
         )
-        st.text('RM 354774')
 
         st.text(
-            'Georgia Oliveira Paixão Duarte',
+            'Georgia Oliveira Paixão Duarte \n RM 354529',
             help='LinkedIn: https://www.linkedin.com/in/georgia-oliveira-paix%C3%A3o-duarte-61133729/'
         )
-        st.text('RM 354529')
 
         st.text(
-            'Mauricio Alexandre de Souza Júnior'
+            'Mauricio Alexandre de Souza Júnior \n RM 355078',
+            help='LinkedIn: https://www.linkedin.com/in/mauricio-a-souza-junior-56a68728a/'
         )
-        st.text('')
 
         st.text(
-            'Renan da Silva Leão',
+            'Renan da Silva Leão \n RM 355101',
             help='LinkedIn: https://www.linkedin.com/in/renanleao7/'
         )
-        st.text('RM 355101')
 
         st.divider()
 
