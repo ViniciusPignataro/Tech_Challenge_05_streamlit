@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs.passos_magicos import sobre_tab, relatorios_tab, base_dados_tab
+from tabs.passos_magicos import sobre_tab, relatorios_tab
 
 def main():
     # Definindo um título para a página    
@@ -12,7 +12,7 @@ def main():
         st.image('assets/img/logo-passos-magicos.png', use_container_width=True)
 
     # Criação de abas
-    tab1, tab2, tab3 = st.tabs(['Sobre', 'Relatórios', 'Base de dados'])
+    tab1, tab2, tab3 = st.tabs(['Sobre', 'Relatórios'])
 
 
     with tab1:
@@ -20,8 +20,5 @@ def main():
 
     with tab2:
         relatorios_tab.show()
-
-    with tab3:
-        base_dados_tab.show()
 
 main()  
