@@ -105,5 +105,5 @@ def show():
                         st.markdown(f"***Mas o que é o {s['indicador']}?***")
                         st.markdown(f"{explicacao_indicadores[s['indicador']]}")
             with col2_2:
-                st.image(f"img\\{img_proxima_pedra}.png", caption=f"Próxima pedra para alcançar - {resultados['proxima_pedra']}.", width=200)
+                st.image(f"img/{img_proxima_pedra}.png", caption=f"Próxima pedra para alcançar - {resultados['proxima_pedra']}.", width=200)
             
