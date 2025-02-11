@@ -1,67 +1,67 @@
 {
-    "nome": "ALUNO-563",
-    "inde": 7.038692476190477,
+    "nome": "ALUNO-1",
+    "inde": 7.319,
     "pedra": "Ametista",
-    "ano": "2022",
+    "ano": "2021",
     "proxima_pedra": "Topázio",
     "proximo_inde_medio_alcancavel": 8.746,
     "indicadores": {
-        "IAA": 8.500020000000001,
-        "IEG": 9.047619047619047,
-        "IPS": 7.5,
-        "IDA": 5.833333333333333,
-        "IPP": 5.625,
-        "IPV": 7.0,
+        "IAA": 7.5,
+        "IEG": 6.3,
+        "IPS": 6.9,
+        "IDA": 8.8,
+        "IPP": 7.7,
+        "IPV": 8.1,
         "IAN": 5.0
     },
     "sugestoes": [
         {
             "indicador": "IAA",
-            "valor_aluno": 8.500020000000001,
+            "valor_aluno": 7.5,
             "media_proxima": 9.155427030812325,
             "coeficiente": 0.21151680814787244,
-            "diferenca": 0.6554070308123237,
-            "potencial": 0.13862960319509698
+            "diferenca": 1.6554270308123247,
+            "potencial": 0.35015064167913257
         },
         {
             "indicador": "IEG",
-            "valor_aluno": 9.047619047619047,
+            "valor_aluno": 6.3,
             "media_proxima": 9.37108058131878,
             "coeficiente": 0.45254085053859916,
-            "diferenca": 0.3234615336997333,
-            "potencial": 0.14637955757699705
+            "diferenca": 3.071080581318781,
+            "potencial": 1.3897894183425767
         },
         {
             "indicador": "IPS",
-            "valor_aluno": 7.5,
+            "valor_aluno": 6.9,
             "media_proxima": 7.385224089635854,
             "coeficiente": 0.15695552768331866,
+            "diferenca": 0.48522408963585395,
+            "potencial": 0.07615860303345337
+        },
+        {
+            "indicador": "IDA",
+            "valor_aluno": 8.8,
+            "media_proxima": 8.252116402116402,
+            "coeficiente": 0.5492341119456188,
             "diferenca": 0,
             "potencial": 0
         },
         {
-            "indicador": "IDA",
-            "valor_aluno": 5.833333333333333,
-            "media_proxima": 8.252116402116402,
-            "coeficiente": 0.5492341119456188,
-            "diferenca": 2.4187830687830685,
-            "potencial": 1.3284781707721671
-        },
-        {
             "indicador": "IPP",
-            "valor_aluno": 5.625,
+            "valor_aluno": 7.7,
             "media_proxima": 7.622426470588236,
             "coeficiente": 0.11302953294482296,
-            "diferenca": 1.9974264705882359,
-            "potencial": 0.22576818106221444
+            "diferenca": 0,
+            "potencial": 0
         },
         {
             "indicador": "IPV",
-            "valor_aluno": 7.0,
+            "valor_aluno": 8.1,
             "media_proxima": 8.360793774509803,
             "coeficiente": 0.1673961381574848,
-            "diferenca": 1.360793774509803,
-            "potencial": 0.22779162268168823
+            "diferenca": 0.26079377450980346,
+            "potencial": 0.043655870708454995
         },
         {
             "indicador": "IAN",
@@ -72,5 +72,5 @@
             "potencial": 1.006693035737541
         }
     ],
-    "texto": "Aluno ALUNO-563 possui INDE de 7.04, classificado como Ametista.\nPara atingir a pedra Topázio, o aluno precisa alcançar um INDE próximo de 8.75.\nFalta aproximadamente 1.71 no INDE para alcançar a próxima pedra.\nSugestões para melhoria nos 3 indicadores mais importantes:\n - IDA: seu valor = 5.83, média na próxima pedra = 8.25 -> potencial de ganho no INDE: 1.33\n - IAN: seu valor = 5.00, média na próxima pedra = 8.66 -> potencial de ganho no INDE: 1.01\n - IPV: seu valor = 7.00, média na próxima pedra = 8.36 -> potencial de ganho no INDE: 0.23\n"
+    "texto": "Aluno ALUNO-1 possui INDE de 7.32, classificado como Ametista.\nPara atingir a pedra Topázio, o aluno precisa alcançar um INDE próximo de 8.75.\nFalta aproximadamente 1.43 no INDE para alcançar a próxima pedra.\nSugestões para melhoria nos 3 indicadores mais importantes:\n - IEG: seu valor = 6.30, média na próxima pedra = 9.37 -> potencial de ganho no INDE: 1.39\n - IAN: seu valor = 5.00, média na próxima pedra = 8.66 -> potencial de ganho no INDE: 1.01\n - IAA: seu valor = 7.50, média na próxima pedra = 9.16 -> potencial de ganho no INDE: 0.35\n"
 }

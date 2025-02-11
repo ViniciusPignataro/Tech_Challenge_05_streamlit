@@ -234,7 +234,7 @@ def modelo_sugestao(nome_aluno: str, qtd_indicadores: int) -> json :
     # =============================================================================
 
     # Carrega os dados a partir do arquivo CSV, utilizando ";" como separador
-    df = pd.read_csv('base_dados\\base_full.csv', sep=';')
+    df = pd.read_csv('base_dados/base_full.csv', sep=';')
 
     # Lista dos indicadores que serão utilizados no modelo
     indicadores = ["IAA", "IEG", "IPS", "IDA", "IPP", "IPV", "IAN"]
