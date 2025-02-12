@@ -30,38 +30,57 @@ def obter_sugestoes(data, quantidade):
     return sugestoes_ordenadas[:quantidade]
 
 def show():
+
+    st.write('')
+    st.write('Abaixo estaremos utilizando o modelo de Regressão Linear para demonstração, pois ele demonstrou uma previsão excelente, porém com menos chances de ser considerada overfitting.')
+    
+    st.divider()
+
     col1, col2 = st.columns([2,4])
+
     with col1:
+
         col1_1, col1_2 = st.columns(2)
+
         with col1_1:
             help = 'Insira um nome para buscar um aluno e o modelo realizar as sugestões.'
             nome_aluno = st.text_input("Buscar aluno:", value="ALUNO-1", type="default", on_change=None, args=None,help=help, kwargs=None, placeholder="Ex: ALUNO-1", disabled=False, label_visibility="visible")
+
         with col1_2:
             help = 'Insira o número de indicadores que deseja que o sistema sugira. (Exemplo: 1 irá trazer o principal indicador em que o aluno pode melhorar seu INDE)'
             qtd_indicadores = st.number_input("Quantidade indicadores:", value=3, help=help, kwargs=None, disabled=False, label_visibility="visible")
+
         st.divider()
+
         st.subheader('Informações gerais')
+
         resultados = modelo_sugestao.modelo_sugestao(nome_aluno=nome_aluno, qtd_indicadores=int(qtd_indicadores))
+
         col1_3, col1_4 = st.columns(2)
+
         match resultados['pedra']:
             case 'Quartzo': cor_pedra = 'grey'
             case 'Ágata': cor_pedra = 'rainbow'
             case 'Ametista': cor_pedra = 'violet'
             case 'Topázio': cor_pedra = 'orange'
+
         match resultados['proxima_pedra']:
             case 'Quartzo': cor_prox_pedra = 'grey'
             case 'Ágata': cor_prox_pedra = 'rainbow'
             case 'Ametista': cor_prox_pedra = 'violet'
             case 'Topázio': cor_prox_pedra = 'orange'
             case _: cor_prox_pedra = cor_pedra
+
         with col1_3:
             st.write(f":mortar_board:  Nome:  :red[{resultados['nome']}]")
             st.write(f":memo:  INDE Atual: :red[{round(resultados['inde'],3)}]")
             st.write(f":spiral_calendar_pad:  Ano referência: :red[{resultados['ano']}]")
             st.write(f":gem:  Pedra atual: :{cor_pedra}[{resultados['pedra']}]")
             st.write(f"	:dart:  Próxima pedra: :{cor_prox_pedra}[{resultados['proxima_pedra']}]")
+
         with col1_4:
             st.markdown("**:blue[Indicadores:]**")
+
             st.markdown(f"""
                 <div style="display: flex; justify-content: space-around;">
                     <span>IAA: {round(resultados['indicadores']['IAA'],2)}</span>
@@ -69,6 +88,7 @@ def show():
                     <span>IEG: {round(resultados['indicadores']['IEG'],2)}</span>
                 </div>
             """, unsafe_allow_html=True)
+
             st.markdown(f"""
                 <div style="display: flex; justify-content: space-around;">
                     <span>IPS: {round(resultados['indicadores']['IPS'],2)}</span>
@@ -76,6 +96,7 @@ def show():
                     <span>IDA: {round(resultados['indicadores']['IDA'],2)}</span>
                 </div>
             """, unsafe_allow_html=True)
+
             st.markdown(f"""
                 <div style="display: flex; justify-content: space-around;">
                     <span>IPP: {round(resultados['indicadores']['IPP'],2)}</span>
@@ -83,6 +104,7 @@ def show():
                     <span>IPV: {round(resultados['indicadores']['IPV'],2)}</span>
                 </div>
             """, unsafe_allow_html=True)
+
             st.markdown(f"IAN: {round(resultados['indicadores']['IAN'],2)}")
     
     with col2:
@@ -93,17 +115,24 @@ def show():
             case 'Ametista': img_proxima_pedra = 'amethyst'
             case 'Topázio': img_proxima_pedra = 'topaz'
             case _: img_proxima_pedra = 'topaz'
+
         with st.container(border=True):
+
             col2_1, col2_2 = st.columns([6,2])
+
             with col2_1:
                 sugestoes = obter_sugestoes(resultados, int(qtd_indicadores))
+
                 st.subheader('Sugestão de objetivo:')
+
                 for s in sugestoes:
                     with st.expander(f"{s['indicador']} -- Atual = {round(s['valor_aluno'],2)} -- Média próxima pedra = {round(s['media_proxima'],2)}"):
                         st.divider()
+
                         st.markdown(f"O seu **{s['indicador']}** atual está com um valor total de **{round(s['valor_aluno'],2)}**, segundo a análise do nosso modelo de Regressão Linear, a média desse mesmo indicador para os alunos que estão na próxima pedra alcançável é de **{round(s['media_proxima'],2)}**, com isso sugerimos um dos seus focos para aprimoramento seja relacionado a aumentar esse indicador, pois a diferença entre seu indicador e dos alunos da próxima pedra é de **{round(s['diferenca'],2)}** e multiplicando por seu respectivo coeficiente, você pode vir a ganhar até **{round(s['potencial'],2)}** de INDE!!")
                         st.markdown(f"***Mas o que é o {s['indicador']}?***")
                         st.markdown(f"{explicacao_indicadores[s['indicador']]}")
+
             with col2_2:
-                st.image(f"img/{img_proxima_pedra}.png", caption=f"Próxima pedra para alcançar - {resultados['proxima_pedra']}.", width=200)
+                st.image(f"assets/img/{img_proxima_pedra}.png", caption=f"Próxima pedra para alcançar - {resultados['proxima_pedra']}.", width=200)
             

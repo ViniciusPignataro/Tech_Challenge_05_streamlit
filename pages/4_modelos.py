@@ -1,24 +1,24 @@
 import streamlit as st
-from tabs.modelos import modelo1_tab, modelo2_tab, modelo3_tab, modelo4_tab
-
+from tabs.modelos import modelo_linear_regression, modelo_random_forest, modelo_decision_tree, modelo_svr, modelo_andamento
 
 def main():
-    st.subheader(':red[Modelos (INSERIR SOBRE OS MODELOS UTILIZADOS EM TABS SEPARADAS)]', divider='red')
+    st.subheader(':red[Modelos e Treinamento]', divider='red')
 
-    tab0, tab1, tab2, tab3 = st.tabs(['Modelo1', 'Modelo2', 'Modelo3', 'Modelo4'])
+    tab0, tab1, tab2, tab3, tab4 = st.tabs(['Linear Regression', 'Random Forest', 'Decision Tree', 'SVR', 'Funcionamento'])
 
     with tab0: 
-        modelo1_tab.show()
+        modelo_linear_regression.show()
 
     with tab1:
-        modelo2_tab.show()
+        modelo_random_forest.show()
 
     with tab2:
-        modelo3_tab.show()
+        modelo_decision_tree.show()
 
     with tab3:
-        modelo4_tab.show()
+        modelo_svr.show()
 
-
+    with tab4:
+        modelo_andamento.show()
 
 main()  
