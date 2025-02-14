@@ -1,5 +1,6 @@
 import streamlit as st
 import modelo_sugestao
+import pandas as pd
 
 explicacao_indicadores = {
     "IAN": "O (IAN) avalia se você está na fase de ensino correspondente à sua idade, de acordo com as diretrizes do Ministério da Educação. Para melhorar, acompanhe seu progresso e, se perceber que está fora do nível adequado, converse com seus professores para ajustar sua trajetória escolar.",
@@ -53,6 +54,16 @@ def show():
         st.divider()
 
         st.subheader('Informações gerais')
+
+        
+        try:
+            df = pd.read_csv('base_dados/base_full.csv', sep=';')
+
+            if nome_aluno not in df['NOME'].values:
+                st.error('Aluno não encontrado')
+                return
+        except Exception as e:
+            return
 
         resultados = modelo_sugestao.modelo_sugestao(nome_aluno=nome_aluno, qtd_indicadores=int(qtd_indicadores))
 
